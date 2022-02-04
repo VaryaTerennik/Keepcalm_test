@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("../fonts/OrchideaPro/stylesheet.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(0deg, #464341 0%, #010101 100%);
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+}
+.header__logo {
+  position: relative;
+}
+.header__logo-img {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 262px;
+  top: 35px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+.header__logo-title {
+  position: absolute;
+  width: 170px;
+  height: 32px;
+  left: 305.27px;
+  top: 37px;
+}
+.header__contact {
+  position: absolute;
+  width: 228px;
+  height: 32px;
+  left: 1431px;
+  top: 38px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.main {
+  position: relative;
+}
+
+.main__tab-content_right {
+  position: relative;
+  left: 262px;
+  right: 0px;
+  width: 1658px;
+  margin-right: 0px;
+}
+
+.main__tab-menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 262px;
+}
+.main__tab-menu-title {
+  width: 140px;
+  height: 60px;
+  margin-top: 182px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 110%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #141414;
+  margin-right: 55px;
+  cursor: pointer;
+}
+.main__tab-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__tab-title span {
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.main__tab-title {
+  font-family: "Orchidea Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 110%;
+  /* or 70px */
+  text-transform: uppercase;
+  color: #141414;
+  margin-top: 113px;
+}
+
+.main__tab-menu-title_active {
+  border-bottom: 3px #141414 solid;
+}
+
+.main__tab-title_center {
+  margin: 113px auto 0px auto;
+}
+.main__block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.block-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* position: relative; */
+}
+.block__text-title {
+  font-family: "Orchidea Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  color: #141414;
+}
+
+.block__text-title_left {
+  width: 600px;
+  height: 160px;
+  margin-top: 70px;
+}
+.block__text-title_right {
+  width: 600px;
+  height: 160px;
+  margin-top: 124px;
+  margin-left: 198px;
+}
+
+.block__text-content__right {
+  width: 600px;
+  height: 150px;
+  margin-left: 198px;
+}
+
+.block__text-content_left {
+  width: 600px;
+  height: 270px;
+}
+
+.block__text-content {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  color: #141414;
+  margin-top: 25px;
+}
+
+.block__image_right {
+  width: 860px;
+  height: 480px;
+  margin-left: 197px;
+  margin-top: 70px;
+  background-image: url(../images/julia-d.jpg);
+  background-size: cover;
+}
+
+.block__image_left {
+  width: 599px;
+  height: 411px;
+  margin-top: 87px;
+  background-image: url(../images/taisiia-stupak.jpg);
+  background-size: cover;
+}
+
+.offer__slider {
+  margin-top: 70px;
+}
+
+.offer__slider-wrapper {
+  width: 1177px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.offer__slider-container {
+  display: flex;
+  flex-direction: row;
+  width: 1920px;
+  height: 550px;
+}
+.offer__slide {
+  width: 380px;
+  height: 550px;
+  margin-right: 18.5px;
+}
+
+.offer__slide_two {
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.offer__slide_five {
+  flex-direction: row;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.offer__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer__slide_five .slide__description {
+  display: inline-block;
+  width: 50%;
+  height: 550px;
+  background: #141414;
+  opacity: 0.5;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.offer__slide_two .slide__description {
+  display: inline-block;
+  width: 360px;
+  height: 145px;
+  background: #141414;
+  opacity: 0.5;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.slide__description-text {
+  font-family: Orchidea Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  color: #ffffff;
+}
+
+.offer__slider-counter {
+  display: flex;
+  flex-direction: row;
+  width: 187.2px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 69.4px;
+}
+.offer__slider-prev {
+  width: 12.22px;
+  height: 23.21px;
+}
+.offer__slider-next {
+  width: 12.22px;
+  height: 23.21px;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #141414;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  margin-top: 210px;
+}
+
+.footer-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: end;
+  text-align: center;
+}
+.footer_content {
+  width: 100%;
+  height: 32px;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

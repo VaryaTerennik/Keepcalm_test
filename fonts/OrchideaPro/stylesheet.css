@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Orchidea Pro ExBd';
+    src: url('OrchideaPro-ExtraBold.eot');
+    src: local('Orchidea Pro ExtraBold'), local('OrchideaPro-ExtraBold'),
+        url('OrchideaPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-ExtraBold.woff2') format('woff2'),
+        url('OrchideaPro-ExtraBold.woff') format('woff'),
+        url('OrchideaPro-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('OrchideaPro-Bold.eot');
+    src: local('Orchidea Pro Bold'), local('OrchideaPro-Bold'),
+        url('OrchideaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-Bold.woff2') format('woff2'),
+        url('OrchideaPro-Bold.woff') format('woff'),
+        url('OrchideaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Lt';
+    src: url('OrchideaPro-LightItalic.eot');
+    src: local('Orchidea Pro Light Italic'), local('OrchideaPro-LightItalic'),
+        url('OrchideaPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-LightItalic.woff2') format('woff2'),
+        url('OrchideaPro-LightItalic.woff') format('woff'),
+        url('OrchideaPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro SmBd';
+    src: url('OrchideaPro-SemiBold.eot');
+    src: local('Orchidea Pro SemiBold'), local('OrchideaPro-SemiBold'),
+        url('OrchideaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-SemiBold.woff2') format('woff2'),
+        url('OrchideaPro-SemiBold.woff') format('woff'),
+        url('OrchideaPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Bk';
+    src: url('OrchideaPro-BlackItalic.eot');
+    src: local('Orchidea Pro Black Italic'), local('OrchideaPro-BlackItalic'),
+        url('OrchideaPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-BlackItalic.woff2') format('woff2'),
+        url('OrchideaPro-BlackItalic.woff') format('woff'),
+        url('OrchideaPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Bk';
+    src: url('OrchideaPro-Black.eot');
+    src: local('Orchidea Pro Black'), local('OrchideaPro-Black'),
+        url('OrchideaPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-Black.woff2') format('woff2'),
+        url('OrchideaPro-Black.woff') format('woff'),
+        url('OrchideaPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('OrchideaPro-Regular.eot');
+    src: local('Orchidea Pro Regular'), local('OrchideaPro-Regular'),
+        url('OrchideaPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-Regular.woff2') format('woff2'),
+        url('OrchideaPro-Regular.woff') format('woff'),
+        url('OrchideaPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro SmBd';
+    src: url('OrchideaPro-SemiBoldItalic.eot');
+    src: local('Orchidea Pro SemiBold Italic'), local('OrchideaPro-SemiBoldItalic'),
+        url('OrchideaPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-SemiBoldItalic.woff2') format('woff2'),
+        url('OrchideaPro-SemiBoldItalic.woff') format('woff'),
+        url('OrchideaPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('OrchideaPro-BoldItalic.eot');
+    src: local('Orchidea Pro Bold Italic'), local('OrchideaPro-BoldItalic'),
+        url('OrchideaPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-BoldItalic.woff2') format('woff2'),
+        url('OrchideaPro-BoldItalic.woff') format('woff'),
+        url('OrchideaPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Md';
+    src: url('OrchideaPro-MediumItalic.eot');
+    src: local('Orchidea Pro Medium Italic'), local('OrchideaPro-MediumItalic'),
+        url('OrchideaPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-MediumItalic.woff2') format('woff2'),
+        url('OrchideaPro-MediumItalic.woff') format('woff'),
+        url('OrchideaPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro ExLt';
+    src: url('OrchideaPro-ExtraLightItalic.eot');
+    src: local('Orchidea Pro ExtraLight Italic'), local('OrchideaPro-ExtraLightItalic'),
+        url('OrchideaPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-ExtraLightItalic.woff2') format('woff2'),
+        url('OrchideaPro-ExtraLightItalic.woff') format('woff'),
+        url('OrchideaPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Md';
+    src: url('OrchideaPro-Medium.eot');
+    src: local('Orchidea Pro Medium'), local('OrchideaPro-Medium'),
+        url('OrchideaPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-Medium.woff2') format('woff2'),
+        url('OrchideaPro-Medium.woff') format('woff'),
+        url('OrchideaPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro ExLt';
+    src: url('OrchideaPro-ExtraLight.eot');
+    src: local('Orchidea Pro ExtraLight'), local('OrchideaPro-ExtraLight'),
+        url('OrchideaPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-ExtraLight.woff2') format('woff2'),
+        url('OrchideaPro-ExtraLight.woff') format('woff'),
+        url('OrchideaPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('OrchideaPro-Italic.eot');
+    src: local('Orchidea Pro Italic'), local('OrchideaPro-Italic'),
+        url('OrchideaPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-Italic.woff2') format('woff2'),
+        url('OrchideaPro-Italic.woff') format('woff'),
+        url('OrchideaPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro ExBd';
+    src: url('OrchideaPro-ExtraBoldItalic.eot');
+    src: local('Orchidea Pro ExtraBold Italic'), local('OrchideaPro-ExtraBoldItalic'),
+        url('OrchideaPro-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-ExtraBoldItalic.woff2') format('woff2'),
+        url('OrchideaPro-ExtraBoldItalic.woff') format('woff'),
+        url('OrchideaPro-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Lt';
+    src: url('OrchideaPro-Light.eot');
+    src: local('Orchidea Pro Light'), local('OrchideaPro-Light'),
+        url('OrchideaPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('OrchideaPro-Light.woff2') format('woff2'),
+        url('OrchideaPro-Light.woff') format('woff'),
+        url('OrchideaPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
