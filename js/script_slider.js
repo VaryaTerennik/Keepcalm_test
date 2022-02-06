@@ -38,16 +38,16 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     prev.addEventListener("click", () => {
-      if (offset >= +width.slice(0, width.length - 2) && slideIndex <= 0) {
+      if (offset >= -+width.slice(0, width.length - 2) && slideIndex <= 0) {
         offset = 0;
         slideIndex = 1;
       } else {
-        offset += +width.slice(0, width.length - 2);
+        offset -= +width.slice(0, width.length - 2);
         console.log(offset);
         slideIndex--;
         console.log(slideIndex);
       }
-      containerSlides.style.transform = `translateX(${offset}px)`;
+      containerSlides.style.transform = `translateX(${-offset}px)`;
     });
   }
 
@@ -56,35 +56,37 @@ window.addEventListener("DOMContentLoaded", () => {
   if (windowWidth <= 450) {
     next.addEventListener("click", () => {
       if (
-        offset == +width.slice(0, width.length - 2) * (slides.length - 3) &&
+        offset >= +width.slice(0, width.length - 2) * (slides.length - 3) &&
         slideIndex === slides.length - 2
       ) {
         console.log(offset);
-
+        console.log(slideIndex);
         offset = 0;
         slideIndex = 1;
       } else {
         offset += +width.slice(0, width.length - 2);
         console.log(offset);
-
         slideIndex++;
+        console.log(slideIndex);
       }
-      containerSlides.style.transform = `translateX(-${offset}px)`;
+
+      containerSlides.style.transform = `translateX(${-offset}px)`;
     });
     prev.addEventListener("click", () => {
       if (
-        offset >= +width.slice(0, width.length - 2) * (slides.length - 3) &&
+        offset >= -+width.slice(0, width.length - 2) * (slides.length - 3) &&
         slideIndex <= -1
       ) {
         offset = 0;
         slideIndex = 1;
       } else {
-        offset += +width.slice(0, width.length - 2);
+        offset -= +width.slice(0, width.length - 2);
         console.log(offset);
         slideIndex--;
         console.log(slideIndex);
       }
-      containerSlides.style.transform = `translateX(${offset}px)`;
+
+      containerSlides.style.transform = `translateX(${-offset}px)`;
     });
   }
 
