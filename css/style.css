@@ -6,15 +6,21 @@
   box-sizing: border-box;
 }
 
+/* img {
+  max-width: 100%;
+} */
+
 body {
   position: relative;
   left: 0px;
   top: 0px;
   margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 .header {
-  width: 100%;
+  width: 1920px;
   height: 100px;
   left: 0px;
   top: 0px;
@@ -34,8 +40,19 @@ body {
   height: 36px;
   left: 262px;
   top: 35px;
-  border: 2px solid #ffffff;
   box-sizing: border-box;
+}
+
+.header__logo-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.header__logo-title img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .header__logo-title {
   position: absolute;
@@ -60,8 +77,13 @@ body {
   text-align: center;
   color: #ffffff;
 }
+
+.header__contact-img {
+  display: none;
+}
 .main {
   position: relative;
+  min-height: 780px;
 }
 
 .main__tab-content_right {
@@ -101,9 +123,20 @@ body {
   flex-direction: column;
 }
 
+.main__tab-content_center {
+  width: 1920px;
+  align-items: center;
+  position: relative;
+}
+
 .main__tab-title span {
   text-transform: lowercase;
   font-style: italic;
+}
+
+.main__tab-title_right {
+  position: relative;
+  left: 0px;
 }
 
 .main__tab-title {
@@ -112,7 +145,6 @@ body {
   font-weight: 500;
   font-size: 64px;
   line-height: 110%;
-  /* or 70px */
   text-transform: uppercase;
   color: #141414;
   margin-top: 113px;
@@ -160,7 +192,7 @@ body {
   margin-left: 198px;
 }
 
-.block__text-content__right {
+.block__text-content_right {
   width: 600px;
   height: 150px;
   margin-left: 198px;
@@ -204,7 +236,7 @@ body {
 }
 
 .offer__slider-wrapper {
-  width: 1177px;
+  width: 1195.5px;
   overflow: hidden;
   margin: auto;
 }
@@ -212,13 +244,14 @@ body {
 .offer__slider-container {
   display: flex;
   flex-direction: row;
-  width: 1920px;
   height: 550px;
+  position: relative;
+  left: -34%;
 }
 .offer__slide {
   width: 380px;
   height: 550px;
-  margin-right: 18.5px;
+  margin-left: 18.5px;
 }
 
 .offer__slide_two {
@@ -284,17 +317,15 @@ body {
   justify-content: space-between;
   margin-top: 69.4px;
 }
-.offer__slider-prev {
-  width: 12.22px;
-  height: 23.21px;
-}
+.offer__slider-prev,
 .offer__slider-next {
   width: 12.22px;
   height: 23.21px;
+  cursor: pointer;
 }
 
 .footer {
-  width: 100%;
+  width: 1920px;
   height: 200px;
   background-color: #141414;
   position: relative;
@@ -303,7 +334,7 @@ body {
   margin-top: 210px;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -313,13 +344,12 @@ body {
   align-items: end;
   text-align: center;
 }
-.footer_content {
+.footer__content {
   width: 100%;
   height: 32px;
   font-family: "Roboto";
   font-size: 14px;
   line-height: 16px;
-
   color: #ffffff;
 }
 
@@ -343,4 +373,202 @@ body {
   to {
     opacity: 1;
   }
+}
+.main__accordion-item {
+  height: 83px;
+  width: 1400px;
+  border: none;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  margin-top: 113px;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.main__accordion-item::after {
+  content: url("../icons/right.svg");
+  height: 80%;
+  width: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.main__accordion-title {
+  font-family: "Orchidea Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #141414;
+  width: 90%;
+  text-align: left;
+}
+
+.main__accordion-arrow {
+  height: 100%;
+  display: flex;
+}
+
+.main__accordion-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 91px;
+}
+
+.main__accordion-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.active::after {
+  content: url("../icons/down.svg");
+  height: 80%;
+  width: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.block__image_right-acc {
+  position: relative;
+  width: 599px;
+  height: 411px;
+  margin-top: 87px;
+  left: 484px;
+  /* right: 331px; */
+  background-image: url(../images/taisiia-stupak.jpg);
+  background-size: cover;
+}
+
+.block__image_left-acc {
+  position: relative;
+  width: 860px;
+  height: 480px;
+  left: 0px;
+  margin-top: 70px;
+  background-image: url(../images/julia-d.jpg);
+  background-size: cover;
+}
+
+.main__block_width {
+  width: 1920px;
+  position: relative;
+}
+
+.block__text-title_left-acc {
+  position: relative;
+  width: 600px;
+  height: 160px;
+  left: 261px;
+  top: 97px;
+  font-family: Orchidea Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  color: #141414;
+}
+
+.block__text-content_left-acc {
+  position: relative;
+  width: 600px;
+  height: 150px;
+  left: 261px;
+  top: 95px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  color: #141414;
+}
+
+.slider-fullscreen {
+  display: flex;
+  position: fixed;
+  overflow-y: scroll;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #141414;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  z-index: 1000;
+}
+.slider-fullscreen__button-wrapper {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.slider-fullscreen__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.slide-fullscreen {
+  width: 1300px;
+  height: 789px;
+  margin: 110px auto 25px;
+  position: relative;
+}
+
+.slide-fullscreen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-fullscreen__button-close {
+  background-color: #141414;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.slider-fullscreen__nav {
+  width: 135px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  background-color: #141414;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  left: 1165px;
+  bottom: 0px;
+  border-radius: 5px;
+}
+.slider-fullscreen__nav-prev,
+.slider-fullscreen__nav-next {
+  width: 12px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.description-fullscreen {
+  width: 1300px;
+  height: 90px;
+  margin: 25px auto 0px auto;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffffff;
 }
