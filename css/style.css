@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-/* img {
-  max-width: 100%;
-} */
-
 body {
   position: relative;
   left: 0px;
@@ -289,7 +285,7 @@ body {
 
 .offer__slide_two .slide__description {
   display: inline-block;
-  width: 360px;
+  width: 380px;
   height: 145px;
   background: #141414;
   opacity: 0.5;

@@ -8,12 +8,12 @@ window.addEventListener("DOMContentLoaded", () => {
     next = document.querySelector(".offer__slider-next"),
     prev = document.querySelector(".offer__slider-prev"),
     widthLeg = window.getComputedStyle(
-      document.querySelector(".offer__slide")
+      document.querySelector(".offer__slide_two .slide__description")
     ).width,
     width = +widthLeg.slice(0, widthLeg.length - 2) + 37 + "px";
 
   console.log(width);
-
+  console.log(widthLeg);
   containerSlides.style = `display: flex; width: ${
     100 * slides.length + "%"
   }; transition: 0.5s all`;
@@ -30,7 +30,6 @@ window.addEventListener("DOMContentLoaded", () => {
       ) {
         offset = 0;
         slideIndex = 1;
-        console.log(windowWidth);
       } else {
         offset += +width.slice(0, width.length - 2);
         slideIndex++;
